@@ -1,0 +1,327 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Aboreto', cursive;
+    color: rgb(209, 206, 206);
+
+}
+
+body {
+    background-image: url(./imagenes/pexels-tim-mossholder-3359733.jpg);
+    min-height: 100vh;
+    background-size: 100%;
+}
+
+
+/* Pagina de index */
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-evenly
+}
+
+
+.imglogo {
+    border-radius: 100%;
+    width: 100px;
+
+}
+
+.lista {
+    font-size: 20px;
+    padding: 16px 10px 12px 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+
+}
+
+
+.imagenprincipal {
+    width: 100%
+}
+
+.tabla {
+    width: 100%;
+    background-color: rgba(99, 36, 36, 0.872);
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr 3fr;
+    grid-template-rows: 60px 130px 130px 130px 130px;
+    grid-template-areas: 
+    "titulo caracteristica uso video"
+    "titulo caracteristica uso video"
+    "titulo caracteristica uso video"
+    "titulo caracteristica uso video"
+    "titulo caracteristica uso video";
+    gap: 10px; 
+    padding: 15px;
+
+
+}
+.tabla div{ 
+}
+
+.titulotexto {
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(81, 7, 7);
+}
+
+.texto {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    border: 2px solid rgb(81, 7, 7);
+   
+}
+
+.tabla__titulo{
+    grid-area: titulo;
+    
+}
+
+.tabla__caracteristica{
+grid-area: caracteristica;
+}
+
+.tabla__uso{
+grid-area: uso;
+}
+
+.videoindex {
+   grid-area: video;
+}
+
+.contenido {
+    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 40px 20px 40px 20px;
+    width: 100%;
+    height: 900px;
+    
+}
+
+
+.videomuestra {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.promociones {
+    height: 100%;
+    width: 34%;
+    border-radius: 2%;
+
+}
+
+.pie {
+    padding: 25px 0px 25px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #741c14;
+}
+
+.frasepie {
+
+    text-align: center;
+
+}
+
+/* Pagina NOSOTROS */
+
+
+
+.parrafo {
+
+    width: 50%;
+    padding-left: 20px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.imagenderecha {
+
+    height: 488px;
+    width: 483px;
+    padding-right: 60px;
+}
+
+.derecha {
+    justify-content: end;
+}
+
+.mapa {
+    justify-content: left;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+/* Pagina Catalogo */
+
+.imagencatalogo {
+    width: 100%;
+
+}
+
+
+.opcioncatalogo {
+    position: relative;
+    background-color: beige;
+    width: 25%;
+    height: 330px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 24px;
+
+
+}
+
+.botoncategoria {
+    position: absolute;
+    bottom: 33%;
+    font-size: 39px;
+    background: rgba(136, 35, 35, 0.719);
+    padding: 5px 15px 5px 25px;
+    border-radius: 65px;
+    height: 98px;
+    width: 339px;
+    text-align: center;
+
+}
+
+.materiales {
+    background: rgba(136, 35, 35, 0.612);
+    width: 100%;
+    height: 200px;
+    text-align: justify;
+    font-style: oblique;
+    font-size: 23px;
+    line-height: 1.8;
+    padding: 0px 20px 0px 20px;
+
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+
+}
+
+.botontallas {
+    width: 200px;
+    height: 50px;
+    background-color: cornsilk;
+    padding: 10px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #741c14;
+    font-weight: bold;
+    border-style: dotted;
+    color: #741c14;
+
+
+
+}
+
+
+/* Pagina Recomendaciones */
+
+.contenidoresena {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 40px;
+}
+
+.resenafoto {
+    position: relative;
+    background-color: gainsboro;
+    width: 32%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+.fotocliente {
+    width: 100%;
+    height: 600px;
+}
+
+.resena {
+    position: absolute;
+    bottom: 77%;
+    font-size: 19px;
+    background: rgba(136, 35, 35, 0.719);
+    padding: 5px 15px 5px 15px;
+    border-radius: 24px;
+    height: 95px;
+    width: 350px;
+}
+
+
+/* Pagina Contacto */
+
+.titulocontacto {
+    font-size: 60px;
+    padding: 20px 0px 20px 0px;
+}
+
+
+.cajaformulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(136, 35, 35, 0.589);
+    width: 600px;
+}
+
+.formulario {
+    margin: 0 auto;
+}
+
+.item {
+    padding: 10px 0px 10px 0px;
+
+}
+
+
+.espaciorellenador {
+
+    background-color: rgba(164, 108, 108, 0.589);
+    width: 75%;
+    height: 30px;
+    padding-left: 20px;
+
+}
+
+.boxtexto {
+    height: 300px;
+    width: 100%;
+}
+
+
+.boton2 {
+    width: 100px;
+    height: 30px;
+}

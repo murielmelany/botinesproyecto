@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagenes/botin-con-tacon-moda-11686693.jpg">
+    <title>CONTACTO</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulocontacto">Hablemos</h1>
+
+    </header>
+
+
+    <main>
+        <div class="cajaformulario">
+
+            <form class="formulario">
+                <div class="item">
+                    <label class="datopersonal" for="nombre">Nombre: </label>
+                    <input class="espaciorellenador" required type="text" size="40" placeholder="Nombre y Apellidos"
+                        id="nombre">
+                </div>
+
+                <div class="item">
+                    <label class="datopersonal" for="correo">Correo: </label>
+                    <input class="espaciorellenador" required type="email" size="40" value="@gmail.com" id="correo">
+                </div>
+
+                <div class="item">
+                    <label class="datopersonal" for="telefono">Telefono: </label>
+                    <input class="espaciorellenador" required type="tel" value="+56" maxlength="12" id="telefono">
+                </div>
+
+                <div class="item">
+                    <label class="datopersonal" for="direccion">Direccion: </label>
+                    <input class="espaciorellenador" required type="text"
+                        placeholder="Domicilio particular y comuna en la que recide" size="50" id="direccion">
+                </div>
+
+                <div class="item">
+                    <fieldset>
+                        <legend>Medio de Contacto </legend>
+                        <input type="checkbox" name="contacto" value="html" checked id=> Correo
+                        <input type="checkbox" name="contacto" value="html"> Telefono
+                        <input type="checkbox" name="contacto" value="html"> Carta
+
+                    </fieldset>
+                </div>
+
+
+                <div class="item">
+                    <fieldset>
+                        <legend>Motivo</legend>
+                        <select class="espaciorellenador">
+                            <option value="Consulta">Consulta</option>
+                            <option value="Reclamo">Reclamo</option>
+                            <option value="Felicitaciones">Felicitaciones</option>
+
+                        </select>
+                    </fieldset>
+                </div>
+
+
+                <div class="item">
+                    <textarea class="espaciorellenador boxtexto" cols="50" rows=30"
+                        maxlength="1000">Escribe aqui</textarea>
+                </div>
+
+                <input class="espaciorellenador boton2" type="submit" value="ENVIAR">
+                <input class="espaciorellenador boton2" type="reset" value="BORRAR">
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
