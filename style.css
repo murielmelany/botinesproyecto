@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Aboreto', cursive;
-    color: rgb(209, 206, 206);
+    color: rgb(239, 237, 237);
 
 }
 
@@ -17,30 +17,42 @@ body {
 /* Pagina de index */
 
 
-
-
 header {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 30px;
+    font-size: 47px;
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 
-.imglogo {
-    border-radius: 100%;
-    width: 100px;
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.listademenu {
+    font-size: 27px;
 
 }
 
-.lista {
-    font-size: 20px;
-    padding: 16px 10px 12px 10px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 150px;
-
+a:link {
+    text-decoration: none; 
 }
-
 
 .imagenprincipal {
     width: 100%
@@ -61,10 +73,8 @@ header {
     gap: 10px; 
     padding: 15px;
 
-
 }
-/* .tabla div{ 
-} */
+
 
 .titulotexto {
     font-size: 25px;
@@ -140,12 +150,13 @@ grid-area: uso;
 
 }
 
+
 /* Pagina NOSOTROS */
 
 
 
 .parrafo {
-
+    
     width: 50%;
     padding-left: 20px;
     text-align: justify;
@@ -180,7 +191,9 @@ grid-area: uso;
 
 
 .opcioncatalogo {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: beige;
     width: 25%;
     height: 330px;
@@ -192,13 +205,10 @@ grid-area: uso;
 }
 
 .botoncategoria {
-    position: absolute;
-    bottom: 33%;
-    font-size: 39px;
+    font-size: 36px;
     background: rgba(136, 35, 35, 0.719);
     padding: 5px 15px 5px 25px;
     border-radius: 65px;
-    height: 98px;
     width: 339px;
     text-align: center;
 
@@ -236,7 +246,6 @@ grid-area: uso;
     color: #741c14;
     font-weight: bold;
     border-style: dotted;
-    color: #741c14;
 
 
 
@@ -282,26 +291,30 @@ grid-area: uso;
 
 .titulocontacto {
     font-size: 60px;
-    padding: 20px 0px 20px 0px;
+    padding: 30px 600px 30px 550px;
 }
 
 
 .cajaformulario {
+    
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     text-align: justify;
-    padding: 20px 20px 20px 20px;
-    background-color: rgba(136, 35, 35, 0.589);
-    width: 600px;
+    padding: 20px;
+    width: 100%;
 }
 
 .formulario {
     margin: 0 auto;
+    background-image:linear-gradient(rgb(133, 23, 23), transparent);
+    padding: 20px;
+    
 }
 
 .item {
     padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    
 
 }
 
@@ -324,4 +337,8 @@ grid-area: uso;
 .boton2 {
     width: 100px;
     height: 30px;
+}
+
+.select{
+    width: 100%;
 }
