@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./imagenes/botin-con-tacon-moda-11686693.jpg">
     <title>Index</title>
@@ -17,22 +19,53 @@
 
     <header>
 
-        <a href="./index.html"><div class=" tracking-in-expand logo">MUNDO BOTINES</div></a>
-            <a href="./index.html"><div class="listademenu">INICIO</div></a>
-            <a href="./Nosotros.html"><div class="listademenu">NOSOTROS</div></a>
-            <a href="./Catalogo.html"><div class="listademenu">CATALOGO</div></a>
-            <a href="./Recomendaciones.html"><div class="listademenu">RECOMENDACIONES</div></a>
-            <a href="./Contacto.html"><div class="listademenu">CONTACTO</div></a>
+        <a href="./index.html">
+            <div class=" tracking-in-expand logo">MUNDO BOTINES</div>
+        </a>
+        <a href="./index.html">
+            <div class="listademenu">INICIO</div>
+        </a>
+        <a href="./Nosotros.html">
+            <div class="listademenu">NOSOTROS</div>
+        </a>
+        <a href="./Catalogo.html">
+            <div class="listademenu">CATALOGO</div>
+        </a>
+        <a href="./Recomendaciones.html">
+            <div class="listademenu">RECOMENDACIONES</div>
+        </a>
+        <a href="./Contacto.html">
+            <div class="listademenu">CONTACTO</div>
+        </a>
 
     </header>
 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/CARRUSEL1.jpg" class="d-block w-100" alt="carrusel1">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/CARRUSEL2.jpg" class="d-block w-100" alt="carrusel2">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/CARRUSEL3.jpg" class="d-block w-100" alt="carrusel3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <div>
-        <div>
-
-            <img class="imagenprincipal" src="./imagenes/index1.jpeg" alt="imagenbotin">
-        </div>
-
+      
         <div>
             <div class="tabla">
                 <div class="tabla__titulo1 titulotexto">PRODUCTO</div>
@@ -55,27 +88,34 @@
                 <div class="tabla__titulo3 titulotexto">BOTIN SIN CAÑA</div>
                 <div class="tabla__caracteristica3 texto">
                     <li>Mayor comodidad </li>
-                   <br><li>Estiliza</li>
+                    <br>
+                    <li>Estiliza</li>
                 </div>
                 <div class="tabla__uso3 texto">
                     Para usarlo en temporada primavera o en dias con mas calor.
-                    <br>Al no tener caña permite que la ropa que uses se vea completamente.</div>
+                    <br>Al no tener caña permite que la ropa que uses se vea completamente.
+                </div>
                 <div class="tabla__titulo4 titulotexto">BOTIN CON TACO</div>
                 <div class="tabla__caracteristica4 texto">
                     <li>Estiliza</li>
-                    <br><li>Agrega altura</li>
+                    <br>
+                    <li>Agrega altura</li>
                 </div>
                 <div class="tabla__uso4 texto">
                     Usalo si quieres ganar un poco de estatura
                     Al no tener caña es ideal para epocas de mayor temperatura pero puedes usarlo cuando sea!</div>
-                
-                <div class="tabla__titulo5 titulotexto">BOTIN SIN TACO</div>
-                <div class="tabla__caracteristica5 texto"> <li>Maxima comodidad</li>
-                    <br><li>Multiples usos</li></div>
-                <div class="tabla__uso5 texto">Lejos los mas comodos de todo el catalogo!!
-                    <br>Usalos para ir de paseo o en el dia a dia.</div>
 
-    
+                <div class="tabla__titulo5 titulotexto">BOTIN SIN TACO</div>
+                <div class="tabla__caracteristica5 texto">
+                    <li>Maxima comodidad</li>
+                    <br>
+                    <li>Multiples usos</li>
+                </div>
+                <div class="tabla__uso5 texto">Lejos los mas comodos de todo el catalogo!!
+                    <br>Usalos para ir de paseo o en el dia a dia.
+                </div>
+
+
             </div>
         </div>
 
@@ -88,11 +128,17 @@
         </div>
 
     </div>
+
+
     <footer>
         <div class="pie">
             <h1 class="frasepie"> Todos los derechos reservados.</h1>
         </div>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 

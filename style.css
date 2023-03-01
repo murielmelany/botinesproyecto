@@ -54,6 +54,12 @@ a:link {
     text-decoration: none; 
 }
 
+.carousel-inner{
+padding-top: 20px ;
+padding-bottom: 60px;
+}
+
+
 .imagenprincipal {
     width: 100%
 }
