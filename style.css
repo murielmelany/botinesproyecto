@@ -9,8 +9,9 @@
 
 body {
     background-image: url(./imagenes/pexels-tim-mossholder-3359733.jpg);
-    min-height: 100vh;
     background-size: 100%;
+    min-width: 100%;
+
 }
 
 
@@ -220,36 +221,26 @@ a:link {
 
 /* Pagina Catalogo */
 
-.menucatalogo {
+.opcioncatalogo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
     padding: 30px 20px;
-
-
 }
 
 
 .opcioncatalogo {
-
-    height: 300px;
-    font-size: 56px;
     display: flex;
     align-items: center;
     background-color: beige;
-    color: black;
-    text-align: center;
-    font-weight: bold;
     width: 100%;
-}
+    border: #000000 solid 3px;
+    
+} 
 
-.blockquote {
-    padding: 3px 10px;
-    border: rgb(0, 0, 0) 5px solid;
-    border-top-left-radius: 75px;
-    border-bottom-right-radius: 75px;
+.foto{
+    width: 98%;
 }
-
 
 
 .scale-in-center {
@@ -424,24 +415,42 @@ a:link {
 }
 
 
+/* Media Query version mobile pagina "Catalogo" */
+
 @media screen and (max-width:767px) {
 
     body {
         background: rgb(136, 35, 35);
-        background-image: none;
-    }
+        background-image: none; 
+       
+    } 
 
     header {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+
     }
 
-    .opcioncatalogo {
-        border: #000000 solid 3px;
-        height: 250px;
-        font-size: 25px;
+    .menucatalogo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .opcioncatalogo{
+
+        width: 230px;
+        height: 230px;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+
+    .foto{
+        width: 200px;
+        height: 200px;
     }
 
     .tecnologia {
@@ -457,12 +466,17 @@ a:link {
     }
 }
 
+/* Media Query version tablet pagina "Catalogo" */
+
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    
     body {
         background: rgb(136, 35, 35);
         background-image: none;
     }
+
 
     header {
         display: flex;
@@ -471,13 +485,24 @@ a:link {
         align-items: center;
     }
 
+    /* .menucatalogo{
+        display: flex;
+        flex-wrap: wrap;
+       
+    } */
 
+    .opcioncatalogo{
 
-    .opcioncatalogo {
-        border: #000000 solid 3px;
-        height: 250px;
-        font-size: 40px;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+    
     }
+
+    .foto{
+        width: 130%;
+    }
+   
 
     .tecnologia {
         display: flex;
@@ -490,6 +515,70 @@ a:link {
         background: rgba(36, 8, 8, 0.212);
 
     }
+}
 
 
+/* Media Query version mobil pagina "Nosotros" */
+
+@media screen and (max-width:767px) {
+
+body {
+    background: rgb(136, 35, 35);
+    background-image: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.nosotros {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 20px 15px;
+gap: 20px;
+}
+
+.imagenderecha{
+    display: flex;
+    width: 50%;
+    justify-items: center;
+}
+}
+
+/* Media Query version tablet pagina "Catalogo" */
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        background: rgb(136, 35, 35);
+        background-image: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    
+    .nosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+    gap: 20px;
+    }
+    
+    .imagenderecha{
+        display: flex;
+        width: 50%;
+        justify-items: center;
+}
 }
