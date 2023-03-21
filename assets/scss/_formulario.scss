@@ -1,0 +1,54 @@
+.titulocontacto {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+
+}
+
+.cajaformulario {
+
+    display: flex;
+    text-align: justify;
+    padding: 20px;
+    width: 100%;
+}
+
+.formulario {
+    margin: 0 auto;
+    background-image: linear-gradient(rgb(133, 23, 23), transparent);
+    padding: 20px;
+
+}
+
+.item {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.espaciorellenador {
+
+    background-color: rgba(164, 108, 108, 0.589);
+    width: 75%;
+    height: 30px;
+    padding-left: 20px;
+}
+
+.boxtexto {
+    height: 300px;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: darkseagreen
+}
+
+
+.boton2 {
+    width: 100px;
+    height: 30px;
+}
+
+.select {
+    width: 100%;
+}

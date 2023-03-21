@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Aboreto', cursive;
+    color: rgb(239, 237, 237);
+
+}
+
+$colorprincipal: rgb(136, 35, 35);
+
+body {
+    background-image: url("../../imagenes/pexels-tim-mossholder-3359733.jpg");
+    background-size: 100%;
+    min-width: 100%;
+
+    @media screen and (max-width:767px) {
+        & {
+            background: $colorprincipal;
+            background-image: none;
+
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+        & {
+            background: $colorprincipal;
+            background-image: none;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.contenidoprincipal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 40px 25px 40px 25px;
+    width: 100%;
+}
+
+.promociones {
+    width: 80%;
+    border-radius: 10%;
+}
+
+.sale {
+    display: flex;
+    justify-content: right;
+    justify-items: center;
+}
+
+
+.hotsale {
+
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 187px;
+    left: 1770px;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 0 100px 0;
+
+
+    @media screen and (max-width:767px) {
+        & {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 20px 15px;
+            gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+        & {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 20px 15px;
+            gap: 20px;
+        }
+    }
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    justify-content: space-around;
+    justify-items: center;
+
+}
+
+.parrafo {
+    padding-left: 20px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.menucatalogo {
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width:767px) {
+
+        & {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        & {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+    }
+
+
+    .tecnologia {
+        display: flex;
+        justify-content: center;
+        padding-top: 39px;
+
+        @media screen and (max-width:767px) {
+
+            & {
+                display: flex;
+
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            & {
+                display: flex;
+
+            }
+        }
+    }
+
+    .materiales {
+        background: rgba(136, 35, 35, 0.612);
+        width: 100%;
+        height: 200px;
+        text-align: justify;
+        font-style: oblique;
+        font-size: 23px;
+        line-height: 1.8;
+        padding: 0px 20px 0px 20px;
+
+        @media screen and (max-width:767px) {
+
+            & {
+                width: 100%;
+                height: 100%;
+                background: rgba(36, 8, 8, 0.564);
+
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            & {
+                width: 100%;
+                height: 100%;
+                background: rgba(36, 8, 8, 0.212);
+
+            }
+        }
+    }
+}
