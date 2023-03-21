@@ -2,11 +2,32 @@
 .card {
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: rgba(99, 30, 11, 0.589);
     border: #000000 solid 3px;
 
+    @media screen and (max-width: 767px){
+        & {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(99, 30, 11, 0.589);
+            border: #000000 solid 3px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+
+        & {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(99, 30, 11, 0.589);
+            border: #000000 solid 3px;
+        }
+    }
 }
+
+
 
 .card-img {
     width: 100%;
