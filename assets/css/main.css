@@ -6,7 +6,7 @@
   color: #efeded; }
 
 body {
-  background-image: url("../../imagenes/pexels-tim-mossholder-3359733.jpg");
+  background-image: url("https://storage.googleapis.com/mis-botines/pexels-tim-mossholder-3359733.jpg");
   background-size: 100%;
   min-width: 100%; }
   @media screen and (max-width: 767px) {
@@ -24,6 +24,10 @@ body {
   position: absolute;
   top: 40px;
   left: 40px; }
+  @media screen and (max-width: 767px) {
+    .img2 {
+      width: 80px;
+      height: 80px; } }
 
 .imgderecha {
   display: flex;
@@ -55,6 +59,17 @@ body {
     .foto {
       width: 200px;
       height: 200px; } }
+
+.hotsale {
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  top: 187px;
+  left: 1770px; }
+  @media screen and (max-width: 767px) {
+    .hotsale {
+      width: 60px;
+      height: 60px; } }
 
 header {
   display: flex;
@@ -120,13 +135,6 @@ a:link {
   display: flex;
   justify-content: right;
   justify-items: center; }
-
-.hotsale {
-  width: 100px;
-  height: 100px;
-  position: sticky;
-  top: 187px;
-  left: 1770px; }
 
 .nosotros {
   display: grid;
@@ -219,11 +227,7 @@ a:link {
   display: grid;
   grid-template-columns: 2fr 2fr 4fr 3fr;
   grid-template-rows: 2fr 3fr 3fr 3fr 3fr;
-  grid-template-areas: "titulo caracteristica uso video"
- "titulo caracteristica uso video"
- "titulo caracteristica uso video"
- "titulo caracteristica uso video"
- "titulo caracteristica uso video";
+  grid-template-areas: "titulo caracteristica uso video" "titulo caracteristica uso video" "titulo caracteristica uso video" "titulo caracteristica uso video" "titulo caracteristica uso video";
   gap: 10px;
   padding: 15px; }
   .tabla__titulo {
@@ -240,12 +244,18 @@ a:link {
   justify-content: center;
   align-items: center;
   border: 2px solid #510707; }
+  @media screen and (max-width: 767px) {
+    .titulotexto {
+      font-size: 14px; } }
 
 .texto {
   font-size: 18px;
   text-align: center;
   padding-top: 20px;
   border: 2px solid #510707; }
+  @media screen and (max-width: 767px) {
+    .texto {
+      font-size: 10px; } }
 
 .videoindex {
   grid-area: video; }
